@@ -53,7 +53,8 @@
             border-color: #444444aa;
             border-width: 1px;
             text-align: center;
-            height: 1000px;
+            min-height: 1125px;
+            max-height: 1500px;
         }
         .inmiddlebar {
             max-width: 1660px;
@@ -65,6 +66,8 @@
             border-color: #444444aa;
             border-width: 1px;
             border-radius: 10px;
+            float: left;
+            height: 1100px;
         }
         .blogpost {
             max-width: 1660px;
@@ -76,10 +79,24 @@
             border-color: #444444aa;
             border-radius: 10px;
             border-width: 1px;
-            height:70%;
+            height:80%;
         }
-        .post {
-            max-width: 820px;
+        .postright {
+            max-width: 1150px;
+            width: 100%;
+            margin: 10px auto 0 auto;
+            padding: 10px;
+            background-color: #44444455;
+            border-style: solid;
+            border-color: #444444aa;
+            border-width: 1px;
+            border-radius: 10px;
+            height: auto;
+            text-align:center;
+            float:right;
+        }
+        .postleft{
+            max-width: 465px;
             width: 100%;
             margin: 10px auto 0 auto;
             padding: 10px;
@@ -90,6 +107,7 @@
             border-radius: 10px;
             height: auto;
             text-align: left;
+            float:left;
         }
         a {
             color: #ff2323;
