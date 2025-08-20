@@ -43,54 +43,21 @@
             text-align: center;
         }
         .middlebar {
-            max-width: 15000px;
+            max-width: 1300px;
+            display: flex;
             width: 100%;
             margin: 0 auto;
+            margin-top: 150px;
             padding: 10px;
-            background-color: #444444aa;
-            border-radius: 10px;
-            border-style: solid;
-            border-color: #444444aa;
-            border-width: 1px;
-            text-align: center;
-            height: 1000px;
-        }
-        .inmiddlebar {
-            max-width: 1660px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 10px;
-            background-color: #44444455;
-            border-style: solid;
-            border-color: #444444aa;
-            border-width: 1px;
-            border-radius: 10px;
-        }
-        .blogpost {
-            max-width: 1660px;
-            width: 100%;
-            margin: 10px auto 0 auto;
-            padding: 10px;
-            background-color: #44444455;
-            border-style: solid;
-            border-color: #444444aa;
-            border-radius: 10px;
-            border-width: 1px;
-            height:70%;
-        }
-        .post {
-            max-width: 820px;
-            width: 100%;
-            margin: 10px auto 0 auto;
-            padding: 10px;
-            background-color: #44444455;
-            border-style: solid;
-            border-color: #444444aa;
-            border-width: 1px;
-            border-radius: 10px;
             height: auto;
-            text-align: left;
+            animation: postanim 2s ease;
         }
+
+        @keyframes postanim {
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+
         a {
             color: #ff2323;
             text-decoration: none;
@@ -102,7 +69,7 @@
         }
         .site-footer {
             padding: 24px 0;
-            border-top: 1px solid rgba(255, 49, 49, 0.726);
+            border-top: 1px solid rgba(124, 124, 124, 0.726);
             text-align: center;
             color: #dfdfdf;
         }
