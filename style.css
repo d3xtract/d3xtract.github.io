@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Grid+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --color1: #0D1433; /* dark blue */
+    --color2: #121b46; /* medium blue */
+    --color3: #171f55; /* medium blue */
+    --color4: #274272; /* blue */
+    --color5: #6C90C3; /* light blue */
+    --gradient1: linear-gradient(180deg, #0D1433, #070a1b);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--color5);
+    text-decoration: none;
+}
+
+a:hover {
+    animation: brighten 0.3s ease-in-out forwards;
+}
+
+body {
+    background-image: var(--gradient1);
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* div {
+    border-color: var(--color5);
+    border-width: 1px;
+    border-style: solid;
+} */
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--color5);
+    border-radius: 10px;
+}
+
+#topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    font-family: 'Bitcount Grid Single', monospace;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    position: sticky;
+    top: 0px;
+    border-bottom: 5px solid var(--color1);
+    box-shadow: #070a1b 0px 0px 10px;
+    z-index: 10;
+}
+
+#top-right {
+    font-family: 'Bitcount Grid Single', monospace;
+    font-size: 30px;
+}
+
+#home {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    box-shadow: #070a1b 0px 0px 10px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+#home h1 {
+    font-family: 'Bitcount Grid Single', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+#home p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#home p:hover {
+    animation: brighten 0.3s ease-in-out forwards;
+}
+
+#home-blog {
+    width: 44%;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    box-shadow: #070a1b 0px 0px 10px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+#home-news {
+    width: 44%;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    box-shadow: #070a1b 0px 0px 10px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.news-items {
+    margin-bottom: 20px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.blog-items {
+    margin-bottom: 20px;
+    font-family: 'Lexend', sans-serif;
+}
+
+#about {
+    margin-top: 5px;
+}
+
+#about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#about-content {
+    width: 44%;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    box-shadow: #070a1b 0px 0px 10px;
+    animation: fadeIn 2s ease-in-out forwards;
+    min-height: 600px;
+}
+
+#about-content .icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 8px;
+    padding: 30px;
+    filter: drop-shadow(0 0 5px var(--color5));
+}
+
+#about-image {
+    width: 44%;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 600px;
+    background-color: var(--color2);
+    box-shadow: #000000 5px 0px 30px;
+    animation: fadeIn 2s ease-in-out forwards;
+    min-height: 600px;
+    max-height: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+#about p {
+    font-family: 'Bitcount Grid Single', monospace;
+    font-size: 40px;
+    text-align: center;
+}
+
+#about p:hover {
+    animation: brighten 0.3s ease-in-out forwards;
+}
+
+#contact {
+    display: block;
+    justify-content: space-between;
+    text-align: justify;
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-color: var(--color2);
+    box-shadow: #070a1b 0px 0px 10px;
+    animation: fadeIn 2s ease-in-out forwards;
+    margin-top: 100px;
+}
+
+#contact p {
+    font-family: 'Bitcount Grid Single', monospace;
+    font-size: 50px;
+    text-align: left;
+}
+
+#contact p2 {
+    font-family: 'Bitcount Grid Single', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+#contact p:hover {
+    animation: brighten 0.3s ease-in-out forwards;
+}
+
+#contact p2:hover {
+    animation: brighten 0.3s ease-in-out forwards;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: var(--color5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes brighten {
+    from {
+        filter: brightness(1);
+    }
+    to {
+        filter: brightness(1.5);
+    }
+}
