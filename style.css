@@ -2,13 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 :root {
-    --color1: #0D1433; /* dark blue */
-    --color2: #121b46; /* medium blue */
-    --color3: #171f55; /* medium blue */
-    --color4: #274272; /* blue */
-    --color5: #6C90C3; /* light blue */
-    --gradient1: linear-gradient(180deg, #0D1433, #070a1b);
+    --color1: #ffffff;
+    --color2: #0f0f0f;
+    --color3: #1b1b1b;
+    --color4: #757575;
+    --color5: #c5c5c5;
+    --gradient1: linear-gradient(180deg, #0f0f0f, #050505);
 }
+
+/* DIV BORDER CONTROL */
+
+/*div {
+    border-color: var(--color5);
+    border-width: 1px;
+    border-style: solid;
+} */
+
+/* GENERAL CONTENT (HOME) */
 
 html {
     scroll-behavior: smooth;
@@ -31,12 +41,6 @@ body {
     animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* div {
-    border-color: var(--color5);
-    border-width: 1px;
-    border-style: solid;
-} */
-
 #container {
     width: 80%;
     margin: 0 auto;
@@ -56,8 +60,8 @@ body {
     background-color: var(--color2);
     position: sticky;
     top: 0px;
-    border-bottom: 5px solid var(--color1);
-    box-shadow: #070a1b 0px 0px 10px;
+    border-bottom: 2px dotted var(--color1);
+    box-shadow: #19191a 0px 0px 10px;
     z-index: 10;
 }
 
@@ -76,8 +80,9 @@ body {
     font-size: 20px;
     border-radius: 10px;
     background-color: var(--color2);
-    box-shadow: #070a1b 0px 0px 10px;
+    box-shadow: #19191a 0px 0px 10px;
     animation: fadeIn 2s ease-in-out forwards;
+    border-bottom: 2px dotted var(--color1);
 }
 
 #home h1 {
@@ -95,7 +100,7 @@ body {
     animation: brighten 0.3s ease-in-out forwards;
 }
 
-#home-blog {
+#home-projects {
     width: 44%;
     justify-content: space-between;
     text-align: justify;
@@ -103,7 +108,8 @@ body {
     font-size: 20px;
     border-radius: 10px;
     background-color: var(--color2);
-    box-shadow: #070a1b 0px 0px 10px;
+    border-right: dotted 2px var(--color5);
+    border-left: dotted 2px var(--color5);
     animation: fadeIn 2s ease-in-out forwards;
 }
 
@@ -115,18 +121,19 @@ body {
     font-size: 20px;
     border-radius: 10px;
     background-color: var(--color2);
-    box-shadow: #070a1b 0px 0px 10px;
+    border-right: dotted 2px var(--color5);
+    border-left: dotted 2px var(--color5);
     animation: fadeIn 2s ease-in-out forwards;
 }
 
 .news-items {
     margin-bottom: 20px;
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Bitcount Grid Single', monospace;
 }
 
 .blog-items {
     margin-bottom: 20px;
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Bitcount Grid Single', monospace;
 }
 
 #about {
@@ -144,12 +151,14 @@ body {
     justify-content: space-between;
     text-align: justify;
     padding: 30px;
+    font-family: 'Bitcount Grid Single', monospace;
     font-size: 20px;
     border-radius: 10px;
     background-color: var(--color2);
-    box-shadow: #070a1b 0px 0px 10px;
-    animation: fadeIn 2s ease-in-out forwards;
+    box-shadow: #19191a 0px 0px 10px;
     min-height: 600px;
+    border-right: dotted 2px var(--color5);
+    border-left: dotted 2px var(--color5);
 }
 
 #about-content .icon {
@@ -168,14 +177,15 @@ body {
     padding: 30px;
     font-size: 20px;
     border-radius: 600px;
+    border: dotted 2px var(--color5);
     background-color: var(--color2);
-    box-shadow: #000000 5px 0px 30px;
-    animation: fadeIn 2s ease-in-out forwards;
+    box-shadow: #19191a 5px 0px 30px;
     min-height: 600px;
     max-height: 600px;
     min-width: 600px;
     max-width: 600px;
     margin-top: 30px;
+    filter:grayscale(1);
 }
 
 #about p {
@@ -184,42 +194,35 @@ body {
     text-align: center;
 }
 
-#about p:hover {
-    animation: brighten 0.3s ease-in-out forwards;
-}
-
 #contact {
     display: block;
     justify-content: space-between;
     text-align: justify;
     font-size: 20px;
-    padding: 20px;
-    padding-top: 5px;
     border-radius: 10px;
-    background-color: var(--color2);
-    box-shadow: #070a1b 0px 0px 10px;
     animation: fadeIn 2s ease-in-out forwards;
-    margin-top: 100px;
+    font-family: 'Bitcount Grid Single', monospace;
+    border-right: dotted 2px var(--color5);
+    border-left: dotted 2px var(--color5);
 }
 
 #contact p {
-    font-family: 'Bitcount Grid Single', monospace;
     font-size: 50px;
-    text-align: left;
-}
-
-#contact p2 {
-    font-family: 'Bitcount Grid Single', monospace;
-    font-size: 30px;
     text-align: center;
 }
 
-#contact p:hover {
+
+#about p:hover,
+#contact p:hover, 
+#contact p2:hover {
     animation: brighten 0.3s ease-in-out forwards;
 }
 
-#contact p2:hover {
-    animation: brighten 0.3s ease-in-out forwards;
+
+#about,
+#about-content,
+#about-image{
+    animation: fadeIn 2s ease-in-out forwards;
 }
 
 footer {
@@ -229,6 +232,11 @@ footer {
     font-size: 14px;
     color: var(--color5);
 }
+
+/* PROJECTS PAGE CONTENT */
+
+
+/* ANIMATION SECTION */
 
 @keyframes fadeIn {
     from {
